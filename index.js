@@ -153,14 +153,14 @@ function stateBarCreateElements(jsonObj) {
     })
     //deletes card from passport
     stateDeleteButton.addEventListener("click", () => {
-        fetch(`https://thawing-mesa-11991.herokuapp.com/states${jsonObj.id}`, {
+        fetch(`https://thawing-mesa-11991.herokuapp.com/states/${jsonObj.id}`, {
             method: "DELETE", 
             headers: {
                 "Content-Type": "application/json"
             }  
         })
         .then(res => {
-            stateSpan.remove()
+            stateSpan.remove()s
             index = statesInDb.indexOf(jsonObj.name.toLowerCase())
             statesInDb.splice(index, 1)
         })
