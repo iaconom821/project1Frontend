@@ -115,7 +115,7 @@ function stateBarCreateElements(jsonObj) {
     statesDiv.append(stateSpan)
     
     stateVisitAddButton.addEventListener('click', () => {
-        fetch(`https://thawing-mesa-11991.herokuapp.com/states${jsonObj.id}`, {
+        fetch(`https://thawing-mesa-11991.herokuapp.com/states/${jsonObj.id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
@@ -134,7 +134,7 @@ function stateBarCreateElements(jsonObj) {
     
     stateVisitDeleteButton.addEventListener('click', () => {
         if(jsonObj.visits > 0) {
-            fetch(`https://thawing-mesa-11991.herokuapp.com/states${jsonObj.id}`, {
+            fetch(`https://thawing-mesa-11991.herokuapp.com/states/${jsonObj.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-type": "application/json",
