@@ -1,0 +1,82 @@
+
+/*Whole Page*/
+
+
+/*Top Search Bar*/
+div#form {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background-image: url(https://thumbs.dreamstime.com/b/rough-faded-american-flag-background-patriotic-wallpaper-rough-faded-us-american-flag-background-patriotic-wallpaper-188571992.jpg);
+    background-size: cover;
+}
+#state-form {
+    align-items: center;
+}
+
+#state-form > * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#add-a-state {
+    font-size: 3rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: "Lobster", "sans-serif"
+}
+
+/*"pool" sidebar container*/
+#state-list {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: fit-content;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/*"pool" individual span*/
+
+.state-item {
+flex-basis: 10%;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border: black;
+background-color: bisque;
+border-style: dashed;
+border-width: 2px;
+justify-content: center;
+border-radius: 10%;
+}
+
+/*State Title*/
+.stateP {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/*State Image*/
+img.stateImg {
+    width: 40vw;
+    display: block;
+    margin: auto;
+}
+
+/* ALL delete buttons*/
+
+.class-description {
+    margin: 5%;
+    font-size: 1.5rem;
+}
+
+.state-item p:nth-child(4) {
+    margin: 5%;
+    font-size: 1.5rem;
+}
+
+.state-item button {
+    margin: 0 0 5% 13%;
+}
+
