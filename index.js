@@ -23,7 +23,7 @@ let statesInPassport = []
 
 
 //Initial Fetch, populates left side state board from our database
-fetch('http://localhost:3000/states')
+fetch('https://thawing-mesa-11991.herokuapp.com/states')
 .then(res => res.json())
 .then(jsonArray => {
     jsonArray.forEach(stateBarCreateElements)
