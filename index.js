@@ -52,7 +52,7 @@ form.addEventListener("submit", function (evt) {
             .then(res => res.json())
             .then(stateInfo => {
                 //console.log(stateInfo)
-                fetch('http://localhost:3000/states', {
+                fetch('https://thawing-mesa-11991.herokuapp.com/states', {
                     method: "POST",
                     headers: {
                         "Content-type": "application/json",
@@ -115,7 +115,7 @@ function stateBarCreateElements(jsonObj) {
     statesDiv.append(stateSpan)
     
     stateVisitAddButton.addEventListener('click', () => {
-        fetch(`http://localhost:3000/states/${jsonObj.id}`, {
+        fetch(`https://thawing-mesa-11991.herokuapp.com/states${jsonObj.id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
@@ -134,7 +134,7 @@ function stateBarCreateElements(jsonObj) {
     
     stateVisitDeleteButton.addEventListener('click', () => {
         if(jsonObj.visits > 0) {
-            fetch(`http://localhost:3000/states/${jsonObj.id}`, {
+            fetch(`https://thawing-mesa-11991.herokuapp.com/states${jsonObj.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-type": "application/json",
@@ -153,7 +153,7 @@ function stateBarCreateElements(jsonObj) {
     })
     //deletes card from passport
     stateDeleteButton.addEventListener("click", () => {
-        fetch(`http://localhost:3000/states/${jsonObj.id}`, {
+        fetch(`https://thawing-mesa-11991.herokuapp.com/states${jsonObj.id}`, {
             method: "DELETE", 
             headers: {
                 "Content-Type": "application/json"
