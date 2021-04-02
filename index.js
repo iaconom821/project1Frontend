@@ -160,7 +160,7 @@ function stateBarCreateElements(jsonObj) {
             }  
         })
         .then(res => {
-            stateSpan.remove()s
+            stateSpan.remove()
             index = statesInDb.indexOf(jsonObj.name.toLowerCase())
             statesInDb.splice(index, 1)
         })
